@@ -10,11 +10,20 @@ public class Romain {
 	public String getNom() {
 		return nom;
 	}
-	public void parler(String Texte) {
+	
+	public void parler(String texte) {
 		System.out.println(prendreParole() + "\"" + texte + "\"");
 	}
+	
 	private String prendreParole() {
-		return "Le romain " + nom + " : ";
+		return "Le Romain " + nom + " : ";
+	}
+	public void recevoirCoup (int forceCoup) {
+		force = force - forceCoup;	
+	}
+	@Override
+	public String toString() {
+		return " Romain [" + nom + "] ";
 	}
 	
 }

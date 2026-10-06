@@ -11,10 +11,25 @@ public class Gaulois {
 	public String getNom() {
 		return nom;
 	}
-	public void parler(String Texte) {
+	public void parler(String texte) {
 		System.out.println(prendreParole() + "\"" + texte + "\"");
 	}
 	private String prendreParole() {
-		return "Le gaulois " + nom + " : ";
+		return "Le Gaulois " + nom + " : ";
+	}
+	
+	public static void main(String[] args) {
+		Gaulois asterix = new Gaulois("Astérix",8);
+		System.out.println(asterix);
+		
+		
+	}
+	@Override
+	public String toString() {
+		return " Gaulois [" + nom + "] ";
+	}
+	public void frapper(Romain romain) {
+		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
+		romain.recevoirCoup(force / 3);
 	}
 }
