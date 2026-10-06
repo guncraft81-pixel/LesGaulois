@@ -19,7 +19,13 @@ public class Romain {
 		return "Le Romain " + nom + " : ";
 	}
 	public void recevoirCoup (int forceCoup) {
-		force = force - forceCoup;	
+		force = force - forceCoup;
+		if(force < 1) {
+			parler("J'abandonne !");
+		}
+		else {
+			parler("Aïe");
+		}
 	}
 	@Override
 	public String toString() {

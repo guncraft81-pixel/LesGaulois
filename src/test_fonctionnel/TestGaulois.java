@@ -13,5 +13,8 @@ public class TestGaulois {
 		 Romain minus = new Romain ("Minus", 6);
 		 System.out.println("Dans la forêt " + asterix + "et" + obelix + " tombent nez à nez sur le romain"
 		 		+ minus);
+		 for(int i=0; i<3; i++) {
+			 asterix.frapper(minus);
+		 }
 	}
 }
