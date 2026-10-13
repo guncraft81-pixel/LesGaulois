@@ -29,7 +29,7 @@ public class Gaulois {
 	}
 	@Override
 	public String toString() {
-		return "[" + nom + "]";
+		return nom;
 	}
 	public void frapper(Romain romain) {
 		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
